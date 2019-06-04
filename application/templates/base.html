@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Rapid</title>
+      {% else %}
+      <title>Welcome to Rapid</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Rapid: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
